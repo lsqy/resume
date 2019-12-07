@@ -177,7 +177,7 @@
             <div class="item-bd">
               <ul>
                 <li>
-                  根据<a href="https://taro.aotu.io/" target="_blank">Taro</a>开发的一个网易云音乐开源项目<a href="https://github.com/lsqy/taro-music" target="_blank">taro-music</a>，目前已有300+star
+                  根据<a href="https://taro.aotu.io/" target="_blank">Taro</a>开发的一个网易云音乐开源项目<a href="https://github.com/lsqy/taro-music" target="_blank">taro-music</a>，该项目在Taro社区内也得到了不少朋友们的关注和交流，目前已有<strong>300+</strong><code>star</code>，整体技术栈是：<code>taro + taro-ui + redux + typescript </code>，主要也是想作为一个最佳实践项目来熟练整体技术栈的运用
                 </li>
                 <li>
                   目前作为<a href="https://github.com/NervJS/taro-ui" target="_blank">taro-ui</a>项目成员参与项目的维护
@@ -194,7 +194,24 @@
             <div class="item-bd">
               <ul>
                 <li>
-                  汇管油微信公众号以及手机管车内嵌webview项目、管车队项目，整体技术栈主要是<a href="https://react.docschina.org/" target="_blank">React</a> 全家桶、<a href="https://dvajs.com/guide/" target="_blank">Dva</a> 、<a href="https://mobile.ant.design/" target="_blank">Ant Design Mobile</a>、<a href="https://www.echartsjs.com/zh/index.html" target="_blank">Echarts</a>、<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank">Flex</a> 
+                  汇管油微信公众号以及手机管车内嵌webview项目、管车队项目，整体技术栈主要是<a href="https://react.docschina.org/" target="_blank">React</a>、<a href="https://dvajs.com/guide/" target="_blank">Dva</a> 、<a href="https://mobile.ant.design/" target="_blank">Ant Design Mobile</a>、<a href="https://www.echartsjs.com/zh/index.html" target="_blank">Echarts</a>、<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank">Flex</a>、<code>Less</code>、 <code>Rem</code>等，该项目是由我主导并带领组内成员将之前的zepto版本重构为react版本，并在重构过程中沉淀开发了一些公有组件进行复用。
+                  <p>另外这几个项目是同时运行在微信端和手机管车内嵌的<code>webview</code>当中的多端项目，也做了一些平台方法的统一封装来增加复用型；因为有一个功能页面需要跟服务端进行保持长链接，技术选型使用的<code>WebSocket</code>来进行的相关实现，并加入心跳机制确保断线重连</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--项目:Vue-->
+          <div class="item spec">
+            <header class="item-hd">
+              <a class="btn item-more" href="https://cn.vuejs.org/">Vue</a>
+            </header>
+            <div class="item-bd">
+              <ul>
+                <li>
+                  京东云物联网控制台项目，整体技术栈主要是<a href="https://cn.vuejs.org/" target="_blank">Vue</a> 全家桶、基于<a href="https://element.eleme.cn/#/zh-CN">Element</a>定制的组件库、<a href="https://eggjs.org/" target="_blank">eggjs</a>作为<code>BFF</code>层（中间层），在该项目中使用<code>vue-router</code>的<code>beforeEach</code>进行统一拦截处理，使用<code>axios</code>的<code>interceptors</code>进行<code>request</code>和<code>response</code>的统一处理;在<code>Nodejs</code>层通过网关去调用相应产品线的<code>openapi</code>接口，进行相应聚合后通过接口返回给前端使用;该项目包括物联网中心、物联网引擎、物联网协议适配、物联网智能边缘计算这几大模块，方便用户将自己的设备上云管理、设备管理、设备数据采集处理以及物联网应用集成。
+                </li>
+                <li>
+                  销售线索采集钉钉移动端，整体技术栈主要是<a href="https://cn.vuejs.org/" target="_blank">Vue</a> 、<a href="https://router.vuejs.org/zh/" target="_blank">Vue-Router</a>、<a href="https://vuex.vuejs.org/zh/" target="_blank">Vuex</a>、<code>Less</code>、 <code>Flex</code>、<code>Rem</code>适配，该项目主要是为了方便公司BD可以在钉钉上进行线索跟进反馈
                 </li>
               </ul>
             </div>
@@ -208,32 +225,19 @@
     <div class="content-right">
       <section class="project">
         <div class="section-bd">
-          <!--项目:Vue-->
-          <div class="item spec">
-            <header class="item-hd">
-              <a class="btn item-more" href="https://cn.vuejs.org/">Vue</a>
-            </header>
-            <div class="item-bd">
-              <ul>
-                <li>
-                  京东云物联网控制台项目，整体技术栈主要是<a href="https://cn.vuejs.org/" target="_blank">Vue</a> 全家桶、基于Element定制的组件库、<a href="https://eggjs.org/" target="_blank">eggjs</a>作为BFF层
-                </li>
-                <li>
-                  销售线索采集钉钉移动端，整体技术栈主要是<a href="https://cn.vuejs.org/" target="_blank">Vue</a> 全家桶、Flex、Rem适配
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--项目:weapp-->
-          <div class="item">
+        <!--项目:weapp-->
+        <div class="item spec">
             <header class="item-hd">
               <a class="btn item-more" href="https://angular.cn/">微信小程序</a>
             </header>
             <div class="item-bd">
               <ul>
                 <li>
-                  开发手机工单小程序以及京东云技术新知小程序
+                  手机工单小程序项目，是使用小程序原生语法编写，整体是我主导负责的，包括项目搭建，后期进度把控；该项目主要是为了方便公司现场工程师安装G7设备时，可以方便记录现场数据，远程操作指令安装设备的场景。
                 </li>
+                <li>
+                    京东云技术新知小程序，该项目是使用公司自研多端框架<a href="https://taro.aotu.io/" target="_blank">Taro</a>来进行的相关实现，主要是为了用户可以更方便地了解京东云的产品
+                  </li>
               </ul>
             </div>
           </div>
@@ -245,7 +249,7 @@
             <div class="item-bd">
               <ul>
                 <li>
-                  销售系统跟踪后台管理系统，整体技术栈主要是<a target="_blank" href="https://angular.cn/">Angular1.0</a>相关
+                  销售系统跟踪后台管理系统，整体技术栈主要是<a target="_blank" href="https://angular.cn/">Angular1.0</a>、<a target="_blank" href="https://1.semantic-ui.com/">semanticUI</a>、<code>iframe</code>实现多页签切换，该系统主要是针对公司的内部运营人员管理由营销人员采集来的线索进行管理以及按照规则自动调度给相关区域的负责人员，主要功能有线索查询、采集配置、转发配置、模版配置、用户、角色管理，该项目推出后大大增加了线索的利用率，从以前的不到30%，到之后的80%的利用率。
                 </li>
               </ul>
             </div>
@@ -258,7 +262,10 @@
             <div class="item-bd">
               <ul>
                 <li>
-                  在控制台项目中基于eggjs开发openapi统一调用插件
+                  在物联网控制台项目中作为中间层来增加前端的灵活性，基于<code>eggjs</code>封装<code>openapi</code>统一调用方法
+                </li>
+                <li>
+                  业余时间也喜欢用<code>Nodejs</code>做一些练手项目
                 </li>
               </ul>
             </div>
@@ -281,9 +288,10 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>熟知JS基本语法与知识，掌握最新JS语法与API，熟练TypeScript</li>
-                <li>掌握网页重构所需的CSS、SCSS、LESS</li>
-                <li>掌握前端流行框架React、Vue、Angular</li>
+                <li>熟知JS基本语法与知识，掌握最新JS语法与API，熟练<code>TypeScript</code></li>
+                <li>熟悉ES6常用语法，对闭包、原型链、作用域链有深入的理解</li>
+                <li>掌握网页重构所需的<code>CSS、SCSS、LESS</code></li>
+                <li>掌握前端流行框架<code>React、Vue、Angular、jquery、zepto</code></li>
               </ul>
             </div>
           </div>
@@ -296,7 +304,10 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>用React开发大型复杂应用，熟知React原理与生态技术栈经验丰富</li>
+                <li>用<code>React</code>开发大型复杂应用，熟知<code>React</code>原理与生态技术栈经验丰富</li>
+                <li>
+                    熟练使用<code>Redux</code>进行应用状态管理，理解MVVM开发理念
+                </li>
               </ul>
             </div>
           </div>
@@ -309,7 +320,10 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>用Vue开发过多个项目，熟悉Vue原理以及周边技术栈生态</li>
+                <li>用<code>Vue</code>开发过多个项目，熟悉<code>Vue</code>原理以及周边技术栈生态</li>
+                <li>
+                    熟练使用<code>Vuex</code>进行应用状态管理、使用<code>Vue-Router</code>进行路由控制
+                </li>
               </ul>
             </div>
           </div>
@@ -322,7 +336,8 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>可以根据业务场景进行相关配置优化，可以根据需要开发Plugin & Loader</li>
+                <li>可以根据业务场景进行相关配置优化，可以根据需要开发<code>Plugin & Loader</code></li>
+                <li>对前端工程化有一定的理解</li>
               </ul>
             </div>
           </div>
@@ -335,34 +350,44 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>在实际项目中多处使用Nodejs</li>
-                <li>熟悉eggjs、koa.js、express.js等框架的使用</li>
+                <li>在实际项目中多处使用<code>Nodejs</code></li>
+                <li>熟悉<code>eggjs、koa.js、express.js</code>等框架的使用</li>
               </ul>
             </div>
           </div>
-
-
           <!--数据库-->
           <div class="item">
             <header class="item-hd">
               <span class="item-time">数据库</span>
-              <a class="btn item-more">掌握</a>
+              <a class="btn item-more">了解</a>
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>掌握关系型数据库基本概念与SQL</li>
-                <li>可以操作MongoDB、Redis</li>
+                <li>掌握关系型数据库基本概念与<code>SQL</code></li>
+                <li>可以操作<code>MongoDB</code>、<code>Redis</code></li>
               </ul>
             </div>
           </div>
+          <!--跨端-->
+          <div class="item">
+              <header class="item-hd">
+                <span class="item-time">跨端</span>
+                <a class="btn item-more">了解</a>
+              </header>
+              <div class="item-bd">
+                <ul class="section-content">
+                  <li>了解<code>React-Native、Flutter、Weex</code>等跨端框架的使用</li>
+                </ul>
+              </div>
+            </div>
         </div>
       </section>
     </div>
   </div>
 </main>
 
-<footer class="github-footer">
+<!-- <footer class="github-footer">
   <a class="footer-link" href="https://github.com/lsqy/resume">页面托管在Github Pages上</a>
-</footer>
+</footer> -->
 </body>
 </html>
